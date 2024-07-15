@@ -27,3 +27,11 @@ export const fetchChannel = async () => {
 
   return data;
 };
+
+export const fetchPlaylistByQuery = async (query) => {
+  const { data } =
+    await axios(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${query}&type=playlist&key=${YT_API_KEY}`
+      );
+
+  return data;
+};
