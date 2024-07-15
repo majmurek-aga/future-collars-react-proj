@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import DefaultVideo from "./components/DefaultVideo";
 import Channels from "./components/Channels";
